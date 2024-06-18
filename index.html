@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="calculator making">
+        <table id="calculator">
+            <td colspan="3">
+                <input type="text" id="display" readonly>
+            </td>
+            <td><input type="button" value="C" onclick="cleardisplay()"></td>
+
+            <tr>
+                <td><input type="button" onclick="appendnumber('7')" value="7"></td>
+                <td><input type="button" onclick="appendnumber('8')" value="8"></td>
+                <td><input type="button" onclick="appendnumber('9')" value="9"></td>
+                <td><input type="button" onclick="appendoperator('/')" value="/"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" onclick="appendnumber('4')" value="4"></td>
+                <td><input type="button" onclick="appendnumber('5')" value="5"></td>
+                <td><input type="button" onclick="appendnumber('6')" value="6"></td>
+                <td><input type="button" onclick="appendoperator('*')" value="*"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="appendnumber('1')" value="1"></td>
+                <td><input type="button" onclick="appendnumber('2')" value="2"></td>
+                <td><input type="button" onclick="appendnumber('3')" value="3"></td>
+                <td><input type="button" onclick="appendoperator('+')" value="+"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="appendDecimal('.')" value="."></td>
+                <td><input type="button" onclick="appendnumber('0')" value="0"></td>
+                <td><input type="button" onclick="appendpercent('%')" value="%"></td>
+                <td><input type="button" onclick="appendoperator('-')" value="-"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="deletelast('DEL')" value="DEL"></td>
+                <td><input type="button" onclick="calculate('=')" value="="></td>
+                <td><input type="button" onclick="appendoperator('x')" value="x"></td>
+                <td><input type="button" value="#"></td>
+            </tr>
+        </table>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
